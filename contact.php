@@ -99,8 +99,8 @@ require __DIR__ . '/includes/header.php';
                                 <div>
                                     <strong>Phone</strong>
                                     <p class="mb-0"><a class="text-muted-soft text-decoration-none hover-link" href="tel:<?= str_replace(' ', '', $site['phone']); ?>"><?= e($site['phone']); ?></a></p>
-                                    <p class="mb-0"><a class="text-muted-soft text-decoration-none hover-link" href="tel:09022295511">09022295511</a></p>
-                                    <p class="mb-0"><a class="text-muted-soft text-decoration-none hover-link" href="tel:08130095597">08130095597</a></p>
+                                    <p class="mb-0"><a class="text-muted-soft text-decoration-none hover-link" href="tel:+234 902 229 5511">+234 902 229 5511</a></p>
+                                    <p class="mb-0"><a class="text-muted-soft text-decoration-none hover-link" href="tel:+234 813 009 5597">+234 813 009 5597</a></p>
                                 </div>
                             </div>
                             <div class="d-flex gap-3">
@@ -151,7 +151,7 @@ require __DIR__ . '/includes/header.php';
                                 </div>
                                 <div class="col-12">
                                     <label for="message" class="form-label fw-semibold">Message</label>
-                                    <textarea id="message" name="message" class="form-control" rows="4" required><?= e(old('message')); ?></textarea>
+                                    <textarea id="message" name="message" class="form-control" rows="8" required><?= e(old('message')); ?></textarea>
                                 </div>
                                 <div class="col-12 d-flex flex-wrap gap-3 align-items-center">
                                     <button class="btn btn-main" type="submit">Send message</button>
