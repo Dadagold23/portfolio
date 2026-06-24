@@ -57,7 +57,7 @@ require __DIR__ . '/includes/header.php';
                 <p class="crumbs mb-2">Home / Contact</p>
                 <span class="section-eyebrow">Start the conversation</span>
                 <h1 class="section-title mt-3">Let's talk about your next build, redesign, or system upgrade.</h1>
-                <p class="lead mb-0">The contact flow is now ready to support project conversations and store messages in MySQL once the included schema is imported.</p>
+                <p class="lead mb-0">The contact flow is now ready to support your project conversations and store your messages in our Database for quick access and communication to you once the included message is sent.<br><br>Thanks Warm Regard</p>
             </div>
         </div>
     </section>
