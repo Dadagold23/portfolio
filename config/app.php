@@ -34,7 +34,7 @@ $site = [
     ],
     'resume_doc' => 'assets/docs/resume_dada.doc',
     'resume_pdf' => 'assets/docs/resume_dada.pdf',
-    'location' => 'Lagos, Nigeria',
+    'location' => 'Kwara, Nigeria',
     'stats' => [
         ['value' => '16+', 'label' => 'Years of delivery'],
         ['value' => '25+', 'label' => 'Cross-domain solutions'],
