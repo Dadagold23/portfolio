@@ -1,0 +1,26 @@
+# Disable directory index browsing
+Options -Indexes
+
+# Prevent public access to environment configuration, composer settings, git internals, and SQL schema files
+<FilesMatch "^\.env|^\.git|composer\.(json|lock)|schema\.sql|walkthrough\.md|task\.md|implementation_plan\.md$">
+    <IfModule authz_core_module>
+        Require all denied
+    </IfModule>
+    <IfModule !authz_core_module>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# Block direct access to database directory containing SQL scripts
+RedirectMatch 404 ^/database/.*$
+
+# Rewrite rules for optional HTTPS forcing and clean URL support (if needed)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Force HTTPS (Uncomment the lines below if your server doesn't handle HTTPS redirect at the DNS/Proxy level)
+    # RewriteCond %{HTTPS} off
+    # RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
