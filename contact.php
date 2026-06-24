@@ -88,15 +88,19 @@ require __DIR__ . '/includes/header.php';
                                 <div class="contact-icon"><i class="bi bi-envelope"></i></div>
                                 <div>
                                     <strong>Email</strong>
-                                    <p class="mb-0 text-muted-soft"><?= e($site['email']); ?></p>
-                                    <p class="mb-0 text-muted-soft small" style="font-size: 0.8rem; opacity: 0.8;">Alt: mirrorageconcepts@gmail.com</p>
+                                    <p class="mb-0"><a class="text-muted-soft text-decoration-none hover-link" href="mailto:<?= e($site['email']); ?>"><?= e($site['email']); ?></a></p>
+                                    <p class="mb-0"><a class="text-muted-soft text-decoration-none hover-link" href="mailto:mirrorageconcepts@gmail.com">mirrorageconcepts@gmail.com</a></p>
+                                    <p class="mb-0"><a class="text-muted-soft text-decoration-none hover-link" href="mailto:eng.matinsolatald@gmail.com">eng.matinsolatald@gmail.com</a></p>
+                                    <p class="mb-0"><a class="text-muted-soft text-decoration-none hover-link" href="mailto:matinsola4luv@yahoo.com">matinsola4luv@yahoo.com</a></p>
                                 </div>
                             </div>
                             <div class="d-flex gap-3 mb-3">
                                 <div class="contact-icon"><i class="bi bi-telephone"></i></div>
                                 <div>
                                     <strong>Phone</strong>
-                                    <p class="mb-0 text-muted-soft"><?= e($site['phone']); ?></p>
+                                    <p class="mb-0"><a class="text-muted-soft text-decoration-none hover-link" href="tel:<?= str_replace(' ', '', $site['phone']); ?>"><?= e($site['phone']); ?></a></p>
+                                    <p class="mb-0"><a class="text-muted-soft text-decoration-none hover-link" href="tel:09022295511">09022295511</a></p>
+                                    <p class="mb-0"><a class="text-muted-soft text-decoration-none hover-link" href="tel:08130095597">08130095597</a></p>
                                 </div>
                             </div>
                             <div class="d-flex gap-3">

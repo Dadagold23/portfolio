@@ -1627,3 +1627,12 @@ main > section::after {
     bottom: 14px;
   }
 }
+
+.hover-link {
+  transition: color 0.25s ease, opacity 0.25s ease;
+}
+.hover-link:hover {
+  color: var(--primary) !important;
+  opacity: 0.95;
+}
+
