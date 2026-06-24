@@ -26,6 +26,9 @@ $site = [
     'websites' => [
         ['label' => 'Mirror Age Concepts', 'url' => 'https://www.mirrorageconcepts.com'],
         ['label' => 'LMS Platform', 'url' => 'https://www.lms.mirrorageconcepts.com'],
+        ['label' => 'Kiosk Platform', 'url' => 'https://www.kiosk.mirrorageconcepts.com'],
+        ['label' => 'WeDate Platform', 'url' => 'https://www.wedate.mirrorageconcepts.com'],
+        ['label' => 'WeMeet Platform', 'url' => 'https://www.wemeet.mirrorageconcepts.com'],
     ],
     'roles' => [
         'Project Manager',
